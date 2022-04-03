@@ -1,0 +1,4 @@
+.vscode
+apiserver
+# but keep folders
+!apiserver/
