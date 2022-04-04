@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"http-rest-api/internal/app/apiserver"
 	"log"
 
@@ -25,6 +26,8 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	fmt.Println(config)
 
 	if err := apiserver.Start(config); err != nil {
 		log.Fatal(err)
